@@ -118,7 +118,9 @@ extension StreamChatViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let chat = StreamChat.shared.readChats(at: indexPath.row)
+        guard let chat = StreamChat.shared.readChats(at: indexPath.row) else {
+            return UITableViewCell()
+        }
 
         switch chat.identifier {
         case .my:

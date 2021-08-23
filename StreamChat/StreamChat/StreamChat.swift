@@ -102,7 +102,11 @@ final class StreamChat: NSObject {
         return chats.count
     }
 
-    func readChats(at index: Int) -> Chat {
+    func readChats(at index: Int) -> Chat? {
+        if index >= chats.count {
+            return nil
+        }
+
         return chats[index]
     }
 }

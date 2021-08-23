@@ -11,7 +11,7 @@ import SnapKit
 final class MyMessageCell: UITableViewCell {
     static let reuseIfentifier = "myMessageCell"
 
-    let messageView: UIImageView = {
+    private let messageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "bubble_right")?.withRenderingMode(.alwaysTemplate)
         imageView.contentMode = .scaleToFill
@@ -19,7 +19,7 @@ final class MyMessageCell: UITableViewCell {
         return imageView
     }()
 
-    let messageLable: UILabel = {
+    private let messageLable: UILabel = {
         let label = UILabel()
         label.text = "placeholder send Message"
         label.textColor = .white
@@ -27,7 +27,7 @@ final class MyMessageCell: UITableViewCell {
         return label
     }()
 
-    let timeLabel: UILabel = {
+    private let timeLabel: UILabel = {
         let label = UILabel()
         label.text = "receive Time"
         label.font = UIFont.preferredFont(forTextStyle: .caption2)

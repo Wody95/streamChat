@@ -11,14 +11,14 @@ import SnapKit
 final class OtherMessageCell: UITableViewCell {
     static let reuseIdentifier = "otherMessageCell"
 
-    let usernameLabel: UILabel = {
+    private let usernameLabel: UILabel = {
         let label = UILabel()
         label.text = "receive Username"
         label.font = UIFont.preferredFont(forTextStyle: .footnote)
         return label
     }()
 
-    let messageView: UIImageView = {
+    private let messageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "bubble_left")
         imageView.contentMode = .scaleToFill
@@ -26,14 +26,14 @@ final class OtherMessageCell: UITableViewCell {
         return imageView
     }()
 
-    let messageLable: UILabel = {
+    private let messageLable: UILabel = {
         let label = UILabel()
         label.text = "placeholder receive Message"
         label.numberOfLines = 0
         return label
     }()
 
-    let timeLabel: UILabel = {
+    private let timeLabel: UILabel = {
         let label = UILabel()
         label.text = "receive Time"
         label.font = UIFont.preferredFont(forTextStyle: .caption2)

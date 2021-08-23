@@ -48,6 +48,7 @@ final class StreamChatViewController: UIViewController {
 
             UIView.animate(withDuration: duration) {
                 self.view.layoutIfNeeded()
+            } completion: { (completion) in
                 self.scrollToBottom()
             }
         }
@@ -64,6 +65,7 @@ final class StreamChatViewController: UIViewController {
 
             UIView.animate(withDuration: duration) {
                 self.view.setNeedsLayout()
+            } completion: { (completion) in
                 self.scrollToBottom()
             }
         }

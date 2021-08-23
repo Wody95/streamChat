@@ -14,7 +14,6 @@ final class StreamChat: NSObject {
     private var outputStream: OutputStream?
 
     private let maxReadLength = 4096
-    private let maxSendMessageLength = 300
     private let receiveMessageCount = 2
     private var myUsername = StreamDataFormat.shared.emptyUsername
     private var chats: [Chat] = []
@@ -58,17 +57,13 @@ final class StreamChat: NSObject {
     }
 
     func sendChat(message: String) {
-        if message.count < maxSendMessageLength {
-            let data = StreamDataFormat.shared.sendMessage(data: message)
+        let data = StreamDataFormat.shared.sendMessage(data: message)
 
-            chats.append(Chat(username: myUsername,
-                              message: message,
-                              identifier: .my,
-                              date: Date()))
-            stringToOutputStreamData(string: data)
-        } else {
-            print("message limit over")
-        }
+        chats.append(Chat(username: myUsername,
+                          message: message,
+                          identifier: .my,
+                          date: Date()))
+        stringToOutputStreamData(string: data)
     }
 
     private func receiveChat(stream: InputStream) {

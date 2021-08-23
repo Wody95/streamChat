@@ -66,7 +66,15 @@ final class SendMessageView: UIView {
 
     @objc func didTapSendButton() {
         guard let text = messageTextfield.text,
-              text.isEmpty == false else { return }
+              text.isEmpty == false,
+              text.count <= StreamDataFormat.shared.maxSendMessageLength else {
+            let alert = UIAlertController(title: "보낼 수 있는 글자 제한 초과!",
+                                          message: "입력글자는 300글자 이하로 해주세요",
+                                          preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(okAction)
+            delegate?.presentAlert(alert: alert)
+            return }
         StreamChat.shared.sendChat(message: text)
         delegate?.insertMessage()
         messageTextfield.text = nil

@@ -13,6 +13,7 @@ struct StreamDataFormat {
     let divisionPoint = "::"
     let divisionNotifi = "has"
     let emptyUsername = ""
+    let maxSendMessageLength = 300
 
     func join(data: String) -> String {
         return "USR_NAME::\(data)::END"

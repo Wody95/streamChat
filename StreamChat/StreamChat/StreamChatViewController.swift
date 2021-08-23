@@ -149,6 +149,7 @@ extension StreamChatViewController: UITableViewDataSource {
 
 protocol StreamChatViewControllerDelegate {
     func insertMessage()
+    func presentAlert(alert: UIAlertController)
 }
 
 extension StreamChatViewController: StreamChatViewControllerDelegate {
@@ -157,5 +158,9 @@ extension StreamChatViewController: StreamChatViewControllerDelegate {
         let indexPath: IndexPath = IndexPath(row: lastRow, section: 0)
         tableView.insertRows(at: [indexPath], with: UITableView.RowAnimation.none)
         tableView.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.bottom, animated: true)
+    }
+
+    func presentAlert(alert: UIAlertController) {
+        present(alert, animated: true)
     }
 }

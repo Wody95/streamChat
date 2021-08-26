@@ -2,6 +2,7 @@
 
 ### 스트림 채팅 앱 저장소
 
-- 이 저장소를 자신의 저장소로 fork하여 프로젝트를 진행합니다
+소켓통신을 이해하고, Stream, InputStream, OutputStream, StreamDelegate를 활용해 채팅 앱을 구현합니다.
 
+프로젝트 구성원 : Wody
 

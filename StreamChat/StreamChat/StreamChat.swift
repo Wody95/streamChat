@@ -8,17 +8,21 @@
 import Foundation
 
 final class StreamChat: NSObject {
-    static let shared = StreamChat()
+    static let shared = StreamChat(username: StreamDataFormat.shared.emptyUsername)
 
     private var inputStream: InputStream?
     private var outputStream: OutputStream?
 
     private let maxReadLength = 4096
     private let receiveMessageCount = 2
-    private var myUsername = StreamDataFormat.shared.emptyUsername
+    private var myUsername: String
     private var chats: [Chat] = []
 
     var delegate: StreamChatViewControllerDelegate?
+
+    init(username: String) {
+        myUsername = username
+    }
 
     func setupNetworkCommunication() {
         var readStream: Unmanaged<CFReadStream>?

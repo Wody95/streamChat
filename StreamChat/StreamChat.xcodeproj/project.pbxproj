@@ -3,24 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70136AEF26CA161C006BB174 /* StreamDataFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70136AEE26CA161C006BB174 /* StreamDataFormat.swift */; };
+		70136AF226CA1F46006BB174 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70136AF126CA1F46006BB174 /* SnapKit */; };
+		706AEF9F26CB5AA10032F719 /* MyMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706AEF9E26CB5AA10032F719 /* MyMessageCell.swift */; };
+		706AEFA126CB89470032F719 /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706AEFA026CB89470032F719 /* SendMessageView.swift */; };
+		7072F72926C50A3400826FF7 /* StreamInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7072F72826C50A3400826FF7 /* StreamInfomation.swift */; };
+		70A60B9C26C4CBFE00C08915 /* StreamChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A60B9B26C4CBFE00C08915 /* StreamChat.swift */; };
+		70AC514226CBDC4700F26FF3 /* OtherMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC514126CBDC4700F26FF3 /* OtherMessageCell.swift */; };
+		70AC514426CBDCA500F26FF3 /* DateFormtter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC514326CBDCA500F26FF3 /* DateFormtter.swift */; };
+		70AC514926CBEF7E00F26FF3 /* StreamChatJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC514826CBEF7E00F26FF3 /* StreamChatJoinViewController.swift */; };
+		70B4C86326CC919700843FEE /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B4C86226CC919700843FEE /* NotificationCell.swift */; };
+		70E8D7B726CBB74A008FD6CC /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8D7B626CBB74A008FD6CC /* Chat.swift */; };
 		C7927555262C562B00EF5D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7927554262C562B00EF5D3A /* AppDelegate.swift */; };
 		C7927557262C562B00EF5D3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7927556262C562B00EF5D3A /* SceneDelegate.swift */; };
-		C7927559262C562B00EF5D3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7927558262C562B00EF5D3A /* ViewController.swift */; };
-		C792755C262C562B00EF5D3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C792755A262C562B00EF5D3A /* Main.storyboard */; };
+		C7927559262C562B00EF5D3A /* StreamChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7927558262C562B00EF5D3A /* StreamChatViewController.swift */; };
 		C792755E262C562E00EF5D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C792755D262C562E00EF5D3A /* Assets.xcassets */; };
 		C7927561262C562E00EF5D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C792755F262C562E00EF5D3A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70136AEE26CA161C006BB174 /* StreamDataFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamDataFormat.swift; sourceTree = "<group>"; };
+		706AEF9E26CB5AA10032F719 /* MyMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageCell.swift; sourceTree = "<group>"; };
+		706AEFA026CB89470032F719 /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
+		7072F72826C50A3400826FF7 /* StreamInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamInfomation.swift; sourceTree = "<group>"; };
+		70A60B9B26C4CBFE00C08915 /* StreamChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamChat.swift; sourceTree = "<group>"; };
+		70AC514126CBDC4700F26FF3 /* OtherMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMessageCell.swift; sourceTree = "<group>"; };
+		70AC514326CBDCA500F26FF3 /* DateFormtter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormtter.swift; sourceTree = "<group>"; };
+		70AC514826CBEF7E00F26FF3 /* StreamChatJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamChatJoinViewController.swift; sourceTree = "<group>"; };
+		70B4C86226CC919700843FEE /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		70E8D7B626CBB74A008FD6CC /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		C7927551262C562B00EF5D3A /* StreamChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7927554262C562B00EF5D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7927556262C562B00EF5D3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7927558262C562B00EF5D3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C792755B262C562B00EF5D3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7927558262C562B00EF5D3A /* StreamChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamChatViewController.swift; sourceTree = "<group>"; };
 		C792755D262C562E00EF5D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7927560262C562E00EF5D3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7927562262C562E00EF5D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,12 +50,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70136AF226CA1F46006BB174 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		706AEF9D26CB587A0032F719 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70AC514826CBEF7E00F26FF3 /* StreamChatJoinViewController.swift */,
+				C7927558262C562B00EF5D3A /* StreamChatViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		7072F71426C4FDD700826FF7 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				C792755D262C562E00EF5D3A /* Assets.xcassets */,
+				C792755F262C562E00EF5D3A /* LaunchScreen.storyboard */,
+				C7927562262C562E00EF5D3A /* Info.plist */,
+			);
+			name = SupportingFile;
+			sourceTree = "<group>";
+		};
+		7072F71526C4FDE200826FF7 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				C7927554262C562B00EF5D3A /* AppDelegate.swift */,
+				C7927556262C562B00EF5D3A /* SceneDelegate.swift */,
+			);
+			name = Entry;
+			sourceTree = "<group>";
+		};
+		7072F71726C4FFD400826FF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				706AEFA026CB89470032F719 /* SendMessageView.swift */,
+				70AC514526CBDEF100F26FF3 /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7072F71826C4FFD900826FF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70E8D7B626CBB74A008FD6CC /* Chat.swift */,
+				70A60B9B26C4CBFE00C08915 /* StreamChat.swift */,
+				70136AEE26CA161C006BB174 /* StreamDataFormat.swift */,
+				70AC514326CBDCA500F26FF3 /* DateFormtter.swift */,
+				7072F72826C50A3400826FF7 /* StreamInfomation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70AC514526CBDEF100F26FF3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				706AEF9E26CB5AA10032F719 /* MyMessageCell.swift */,
+				70AC514126CBDC4700F26FF3 /* OtherMessageCell.swift */,
+				70B4C86226CC919700843FEE /* NotificationCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		C7927548262C562B00EF5D3A = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +135,11 @@
 		C7927553262C562B00EF5D3A /* StreamChat */ = {
 			isa = PBXGroup;
 			children = (
-				C7927554262C562B00EF5D3A /* AppDelegate.swift */,
-				C7927556262C562B00EF5D3A /* SceneDelegate.swift */,
-				C7927558262C562B00EF5D3A /* ViewController.swift */,
-				C792755A262C562B00EF5D3A /* Main.storyboard */,
-				C792755D262C562E00EF5D3A /* Assets.xcassets */,
-				C792755F262C562E00EF5D3A /* LaunchScreen.storyboard */,
-				C7927562262C562E00EF5D3A /* Info.plist */,
+				7072F71526C4FDE200826FF7 /* Entry */,
+				7072F71426C4FDD700826FF7 /* SupportingFile */,
+				706AEF9D26CB587A0032F719 /* ViewController */,
+				7072F71726C4FFD400826FF7 /* View */,
+				7072F71826C4FFD900826FF7 /* Model */,
 			);
 			path = StreamChat;
 			sourceTree = "<group>";
@@ -77,12 +154,16 @@
 				C792754D262C562B00EF5D3A /* Sources */,
 				C792754E262C562B00EF5D3A /* Frameworks */,
 				C792754F262C562B00EF5D3A /* Resources */,
+				70136AF326CA1F54006BB174 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = StreamChat;
+			packageProductDependencies = (
+				70136AF126CA1F46006BB174 /* SnapKit */,
+			);
 			productName = StreamChat;
 			productReference = C7927551262C562B00EF5D3A /* StreamChat.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +191,9 @@
 				Base,
 			);
 			mainGroup = C7927548262C562B00EF5D3A;
+			packageReferences = (
+				70136AF026CA1F46006BB174 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C7927552262C562B00EF5D3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,34 +210,55 @@
 			files = (
 				C7927561262C562E00EF5D3A /* LaunchScreen.storyboard in Resources */,
 				C792755E262C562E00EF5D3A /* Assets.xcassets in Resources */,
-				C792755C262C562B00EF5D3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70136AF326CA1F54006BB174 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "// xcode run script\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C792754D262C562B00EF5D3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7927559262C562B00EF5D3A /* ViewController.swift in Sources */,
+				70AC514926CBEF7E00F26FF3 /* StreamChatJoinViewController.swift in Sources */,
+				7072F72926C50A3400826FF7 /* StreamInfomation.swift in Sources */,
+				C7927559262C562B00EF5D3A /* StreamChatViewController.swift in Sources */,
+				706AEFA126CB89470032F719 /* SendMessageView.swift in Sources */,
+				70B4C86326CC919700843FEE /* NotificationCell.swift in Sources */,
 				C7927555262C562B00EF5D3A /* AppDelegate.swift in Sources */,
+				70AC514426CBDCA500F26FF3 /* DateFormtter.swift in Sources */,
+				70AC514226CBDC4700F26FF3 /* OtherMessageCell.swift in Sources */,
+				70E8D7B726CBB74A008FD6CC /* Chat.swift in Sources */,
 				C7927557262C562B00EF5D3A /* SceneDelegate.swift in Sources */,
+				70136AEF26CA161C006BB174 /* StreamDataFormat.swift in Sources */,
+				706AEF9F26CB5AA10032F719 /* MyMessageCell.swift in Sources */,
+				70A60B9C26C4CBFE00C08915 /* StreamChat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C792755A262C562B00EF5D3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C792755B262C562B00EF5D3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C792755F262C562E00EF5D3A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		70136AF026CA1F46006BB174 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70136AF126CA1F46006BB174 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70136AF026CA1F46006BB174 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7927549262C562B00EF5D3A /* Project object */;
 }

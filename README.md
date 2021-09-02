@@ -66,7 +66,8 @@ keyboard가 올라오는 크기를 bottomConstraint에 설정해주고, animate�
 bottomConstraint에 사용된 unowned는 weak와 어떤차이가 있을까요?
 ```
 
-> unowned와 weak의 공통점은 인스턴스에 대한 소유권을 주장하지 않고 주소값만 갖고 있다는 점이다.  
-> 차이점은 weak는 메모리가 해당 인스턴스의 메모리가 해제될 때 nil로 전환하면서 옵셔널한 값이 될 수 있다는 점이고,  
-> unowned는 nil이 될 수 없다는 점이다.  
-> 그런 의미에서 bottomConstraint는 뷰의 최하단을 담당하기 때문에 nil로 존재하면 안된다고 생각해서 unowned를 사용했다.
+> unowned와 weak는 주로 순환 참조를 방지하기 위해 사용한다.
+> 특히 기능적인 면에서 weak는 옵셔널하기 때문에 nil을 할당할 수 있고, unowned는 nil을 할당할 수 없다.
+> 또한 의도적인 면에서 weak는 해당 속성이, 클래스보다 먼저 사라지거나 할당 해제 할 가능성이 있다면 weak를 사용하고
+> 클래스가 할당 해제 될 때까지 참조를 유지해야 한다면 unowned를 사용해야 한다.
+> bottomConstraint의 경우 키보드 레이아웃의 유무와 상관 없이 항상 존재하므로, unowned를 사용하는게 맞다고 생각했다.
